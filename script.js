@@ -49,3 +49,25 @@ const togglernav=function(){
 }
 
 addEventonelements(togglers,"click",togglernav)
+
+
+
+
+/****
+ * show hearder on scrool 
+ * 
+ */
+
+
+const header=document.querySelector('[data-header]');
+
+
+const headershowinscrool=function(){
+if(window.scrollY>100){
+    header.classList.add("active")
+}else{
+    header.classList.remove("active")
+}
+}
+
+window.addEventListener("scroll",headershowinscrool)
