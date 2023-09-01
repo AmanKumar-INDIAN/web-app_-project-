@@ -484,6 +484,7 @@ Hero
     perspective: 1000px;
     padding-block: var(--section-padding);
     position: relative;
+ 
 }
 
 
@@ -583,7 +584,7 @@ Hero
 .logo_image{
     width: 105px;
     height: 105px;
-    filter: drop-shadow(0px 0px 10px black);
+    filter: drop-shadow(0px 10px 30px rgb(234, 233, 233));
 }
 
 
@@ -593,29 +594,47 @@ Hero
 Service-list
 
 ****/
-
+.service{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #011f28;
+    position: relative;
+    padding: 10px 10px;
+    
+    
+}
 
 .service-list{
    
   
    
     display: grid;
-  width: 90%;
+  width: 100%;
     border-radius: var(--radius-12);
     background-color: #02151b;
     margin-block-start:-70px ;
-    position: absolute;
+  
     box-shadow: 0px 0px 10px  #2fbeea ;
     justify-content: center;
     align-items: center;
 
+    padding: 10px 0px;
     
     
     
     
 }
+
+.service-list li{
+    border-block-end: 1px solid  #2fbeea;
+    gap: 10px;
+
+}
 .service-card{
     text-align: center;
+    margin: 50px 10px;
 
 }
 
@@ -633,5 +652,102 @@ Service-list
 
 
 .service-card .card-text{
-    margin-block: 20px 15px;
+    
+    margin:30px 10px ;
+}
+
+
+.service-card .btn-circle{
+    color: var(--verdigris);
+    font-size: 2rem;
+    padding: 18px;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+}
+.service-card .btn-circle:is(:hover,:focus-visible){
+    background-color: var(--verdigris);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/****About***/
+
+
+.about{
+    position:absolute;
+    padding-block-end: 0;
+    background-color: #011f28;
+}
+
+.about .container{
+    display: grid;
+    gap: 25px;
+}
+
+
+.about .section-text{
+    margin-block:20px 35px ;
+}
+
+
+.tab-list{
+        display: flex;
+    flex-wrap: wrap;
+    gap: 20px 5px;
+}
+
+
+.tab-btn{
+    background-color: var(--alice-blue);
+    color: var(--midnight-green);
+    padding: 7px 30px;
+    border-radius: var(--radius-6);
+    font-weight: var(--fw-700);
+}
+
+.tab-btn.active{
+    background-color: var(--verdigris);
+    color:var(--white);
+}
+
+.tab-text{
+    color: var(--midnight-green);
+    margin-block: 35px;
+}
+
+.about-item{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-block-end: 18px;
+}
+
+
+.about-item ion-icon{
+    color: var(--verdigris);
+    font-size: 2rem;
+    flex-shrink:0 ;
+}
+
+
+.about-banner{
+
+    animation: halfrotate 9s infinite ;
+    filter: drop-shadow(0px 0px 30px white);
+}
+
+@keyframes halfrotate {
+    0%{
+        transform: rotatey(0deg);
+    }
+    50%{
+        transform: rotatey(20deg);
+    }
+
+    100%{transform: rotatey(-20deg);}
 }
