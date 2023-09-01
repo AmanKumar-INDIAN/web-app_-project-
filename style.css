@@ -489,7 +489,7 @@ Hero
 
 
 .hero-banner{
-    width: 270px;
+    width: 90%;
     box-shadow: 0px 10px 20px  #6be9f9;
     transform: rotatey(-40deg);
     animation: rotater 5s infinite;
