@@ -749,5 +749,5 @@ Service-list
         transform: rotatey(20deg);
     }
 
-    100%{transform: rotatey(-20deg);}
+    100%{transform: rotatey(-22deg);}
 }
