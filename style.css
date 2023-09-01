@@ -489,6 +489,8 @@ Hero
 
 
 .hero-banner{
+    margin-top: 20px;
+    margin-inline:auto;
     width: 90%;
     box-shadow: 0px 10px 20px  #6be9f9;
     transform: rotatey(-40deg);
@@ -598,7 +600,7 @@ Service-list
   
    
     display: grid;
-  
+  width: 90%;
     border-radius: var(--radius-12);
     background-color: #02151b;
     margin-block-start:-70px ;
@@ -607,6 +609,7 @@ Service-list
     justify-content: center;
     align-items: center;
 
+    
     
     
     
