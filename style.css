@@ -739,6 +739,7 @@ Service-list
 
     animation: halfrotate 9s infinite ;
     filter: drop-shadow(0px 0px 30px white);
+    position: relative;
 }
 
 @keyframes halfrotate {
@@ -751,3 +752,12 @@ Service-list
 
     100%{transform: rotatey(-22deg);}
 }
+
+
+
+
+/**
+Listing
+**/
+
+
