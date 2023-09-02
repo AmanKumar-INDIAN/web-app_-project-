@@ -761,3 +761,17 @@ Listing
 **/
 
 
+.contact{
+    background-color: #000000;
+    position: relative;
+    top: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact iframe{
+    width: 90%;
+    justify-content: center;
+    margin: 10px 10px;
+}
